@@ -2,10 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Inter', sans-serif;
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
 }
 
+@layer components {
+  .btn-filled {
+    @apply bg-button text-base font-semibold border rounded-[100px] text-white;
+    border-color: rgba(180, 235, 199, 1);
+  }
+
+  .btn-default {
+    @apply border-light-blue border-[3] rounded-[100px] text-dark;
+  }
+}
 .section {
   @apply bg-white py-16 px-4 rounded-[50px];
+}
+
+// Archivo font family
+
+.logo {
+  @apply font-bold font-Archivo text-[2.5rem] leading-[100%] tracking-normal;
+}
+
+.logo2 {
+  @apply font-light font-Archivo text-[2.5rem] leading-[100%] tracking-normal;
+}
+
+.heading1 {
+  @apply font-bold font-Archivo text-5xl leading-[100%] tracking-normal;
+}
+
+// Inter font family
+
+.SubHeadingL {
+  @apply font-bold text-[2.625rem] leading-[110%];
+}
+
+.SubHeadingM {
+  @apply font-bold text-4xl leading-[110%];
+}
+
+.SubHeading {
+  @apply font-semibold text-[2rem] leading-9 -tracking-widest;
+}
+
+.SubHeading2 {
+  @apply font-semibold text-[1.375rem] leading-[1.875rem] -tracking-widest;
+}
+
+.BodyM {
+  @apply font-normal text-lg leading-[140%];
+}
+
+.BodyS {
+  @apply font-normal text-base leading-6;
+}
+
+.ButtonM {
+  @apply font-semibold text-lg leading-6 tracking-normal;
+}
+
+.ButtonS {
+  @apply font-semibold text-base leading-6 tracking-normal;
 }

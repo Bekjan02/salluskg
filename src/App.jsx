@@ -10,7 +10,7 @@ function App() {
           <section className="hero bg-hero h-screen"></section>
         </main>
         <div className="section">
-          <button className="bg-button">Click me</button>
+          <button className="btn-filled">Click me</button>
         </div>
       </div>
     </>
