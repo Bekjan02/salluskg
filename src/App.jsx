@@ -1,5 +1,5 @@
 import './App.scss';
-import { Header } from './components';
+import { Header, Hero } from './components';
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <div className="h-screen w-screen bg-slate-700">
         <Header />
         <main>
-          <section className="hero bg-hero h-screen"></section>
+          <Hero />
         </main>
         <div className="section">
           <button className="btn-filled">Click me</button>
