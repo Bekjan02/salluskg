@@ -1,0 +1,15 @@
+.aboutUs {
+  .info {
+    background: rgba(255, 255, 255, 0.59);
+    border-radius: 25px;
+    padding: 16px;
+    margin-top: -48px;
+    backdrop-filter: blur(58px);
+    p {
+      @apply text-dark text-base;
+      &:nth-child(2) {
+        margin-top: 10px;
+      }
+    }
+  }
+}

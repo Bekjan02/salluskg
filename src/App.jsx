@@ -1,5 +1,5 @@
 import './App.scss';
-import { Header, Hero } from './components';
+import { AboutUs, Header, Hero } from './components';
 
 function App() {
   return (
@@ -8,10 +8,10 @@ function App() {
         <Header />
         <main>
           <Hero />
+          <div className="section">
+            <AboutUs />
+          </div>
         </main>
-        <div className="section">
-          <button className="btn-filled">Click me</button>
-        </div>
       </div>
     </>
   );

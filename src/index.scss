@@ -17,9 +17,13 @@
   .btn-default {
     @apply border-light-blue border-[3] rounded-[100px] text-dark;
   }
+
+  .section__title {
+    @apply text-main text-2xl font-bold font-Archivo border-b border-main pb-2.5 mb-6;
+  }
 }
 .section {
-  @apply bg-white py-16 px-4 rounded-[50px];
+  @apply bg-white py-16 px-4 rounded-[50px] -mt-[45px];
 }
 
 // Archivo font family
