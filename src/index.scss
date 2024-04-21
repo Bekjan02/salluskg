@@ -51,7 +51,7 @@
 }
 
 .SubHeading {
-  @apply font-semibold text-[2rem] leading-9 -tracking-widest;
+  @apply font-semibold text-[2rem] leading-9 tracking-tightest;
 }
 
 .SubHeading2 {

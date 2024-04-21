@@ -27,6 +27,9 @@ export default {
           'full-hd': '120px',
         },
       },
+      letterSpacing: {
+        tightest: '-0.01rem',
+      },
       fontFamily: {
         Archivo: ['Archivo', 'sans-serif'],
         // Inter: []

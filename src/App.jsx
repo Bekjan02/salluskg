@@ -1,5 +1,5 @@
 import './App.scss';
-import { AboutUs, Header, Hero, Services } from './components';
+import { AboutUs, Benefits, Header, Hero, Services } from './components';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
           <div className="section">
             <AboutUs />
             <Services />
+            <Benefits />
           </div>
         </main>
       </div>
