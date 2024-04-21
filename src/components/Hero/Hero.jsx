@@ -2,7 +2,7 @@ import './styles.scss';
 
 export const Hero = () => {
   return (
-    <section className="container hero bg-hero bg-no-repeat bg-center h-screen pt-16">
+    <section className="container hero bg-hero bg-no-repeat bg-center min-h-screen pt-40 pb-28">
       <div className="w-80">
         <p className="text-white text-2xl font-medium  font-Archivo">
           Система управления отелями и апартаментами
