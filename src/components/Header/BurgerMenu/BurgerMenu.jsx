@@ -2,14 +2,11 @@ import './styles.scss';
 import { menuItems } from './BurgerMenu.helper';
 import { useState } from 'react';
 import { Dropdown } from '../../../common/ui';
+import cn from 'classnames';
 
 export const BurgerMenu = ({ isOpen }) => {
   const [active, setActive] = useState('aboutUs');
-  //   <option value="KG">Кыргызча (KG)</option>
-  //         <option value="EN">English (EN)</option>
-  //         <option value="AR">العربية (AR)</option>
-  //         <option value="TR">Türkçe (TR)</option>
-  //         <option value="CN">中文 (CN)</option>
+
   const options = [
     {
       label: 'Русский (РУ)',
@@ -34,7 +31,15 @@ export const BurgerMenu = ({ isOpen }) => {
   ];
 
   return (
-    <div className={`burgerMenu fixed bottom-0 w-screen`}>
+    <div
+      className={cn(
+        'burgerMenu fixed bottom-0 right-0 w-screen bg-white shadow-lg transition-transform duration-300 ease-in-out',
+        {
+          'translate-x-full': !isOpen,
+          'translate-x-0': isOpen,
+        }
+      )}
+    >
       <div>
         <ul>
           {menuItems.map(({ label, value }) => (
@@ -48,7 +53,7 @@ export const BurgerMenu = ({ isOpen }) => {
             </li>
           ))}
           <li>
-            <Dropdown />
+            <Dropdown options={options} />
           </li>
         </ul>
       </div>

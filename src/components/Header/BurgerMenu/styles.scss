@@ -4,6 +4,7 @@
   @apply px-4 py-6;
   li {
     padding: 12px 8px 12px 8px;
+    width: fit-content;
   }
   a {
     @apply text-lg font-medium text-dark;
