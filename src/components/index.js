@@ -5,3 +5,4 @@ export { Services } from './Services';
 export { Benefits } from './Benefits';
 export { ConsultationCTA } from './ConsultationCTA';
 export { Builders } from './Builders';
+export { Applications } from './Applications';

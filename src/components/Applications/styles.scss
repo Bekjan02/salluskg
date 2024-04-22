@@ -1,0 +1,38 @@
+.applications {
+  .main {
+    border-radius: 25px;
+    background: url(/src/assets/images/applications-bg.png) center no-repeat;
+    background-size: cover;
+  }
+  .form {
+    @apply my-6;
+    input {
+      @apply w-full rounded-[30px] px-[18px] mb-3 py-2 text-[#868686] outline-none;
+    }
+    button {
+      border: 3px solid #b4ebc7;
+      background: linear-gradient(107.63deg, #36cbb9 -26.5%, #a7d545 127.6%);
+      border-radius: 100px;
+      @apply text-base font-semibold text-white leading-6 tracking-wider;
+    }
+  }
+  .call {
+    background-color: #ffffffb2;
+    backdrop-filter: blur(7px);
+    padding: 24px;
+    border-radius: 25px;
+    h3 {
+      @apply text-main text-lg font-bold;
+      line-height: 19.8px;
+    }
+    a {
+      display: flex;
+      gap: 8px;
+      background: rgba(255, 255, 255, 1);
+      border: 3px solid rgba(190, 234, 224, 1);
+      animation-timing-function: ease-out;
+      animation-duration: 300ms;
+      @apply py-3 justify-center rounded-full mt-3;
+    }
+  }
+}

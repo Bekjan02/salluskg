@@ -7,6 +7,7 @@ import {
   Services,
   ConsultationCTA,
   Builders,
+  Applications,
 } from './components';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <ConsultationCTA />
           <div className="section">
             <Builders />
+            <Applications />
           </div>
         </main>
       </div>
