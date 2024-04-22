@@ -6,3 +6,4 @@ export { Benefits } from './Benefits';
 export { ConsultationCTA } from './ConsultationCTA';
 export { Builders } from './Builders';
 export { Applications } from './Applications';
+export { Contacts } from './Contacts';
