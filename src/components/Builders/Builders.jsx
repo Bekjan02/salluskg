@@ -34,8 +34,8 @@ export const Builders = () => {
           </div>
           <Swiper
             navigation={{
-              prevEl: '.custom-swiper-prev',
-              nextEl: '.custom-swiper-next',
+              prevEl: '.swiper-arrow .arrow-prev',
+              nextEl: '.swiper-arrow .arrow-next',
             }}
             className="builders__slider"
             modules={[Navigation]}
@@ -49,12 +49,15 @@ export const Builders = () => {
                 />
                 <h3 className="mt-[88px]">{slide.title}</h3>
                 <p>{slide.description}</p>
+                <button className="btn-filled w-full py-3 flex items-center justify-center gap-2 mt-6">
+                  <img src="/src/assets/icons/file.svg" alt="File" />
+                  Подробнее об объекте
+                </button>
               </SwiperSlide>
             ))}
             <CustomPrevArrow />
             <CustomNextArrow />
           </Swiper>
-          <button className="btn-filled w-full py-3">Hello world</button>
         </div>
       </div>
     </div>
