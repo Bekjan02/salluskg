@@ -2,6 +2,7 @@ import React from 'react';
 import { items, slidesData } from './Builders.helpers';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { default as ihlasLogo } from '@assets/icons/ihlas-logo.svg?react';
 import './styles.scss';
 
 export const Builders = () => {
@@ -19,7 +20,7 @@ export const Builders = () => {
   );
   return (
     <div className="builders">
-      <h2 className="section__title">Застройщики</h2>
+      <h2 className="section__title"> Застройщики</h2>
       <div className="flex overflow-auto gap-6">
         {items.map((item, i) => (
           <span className="" key={i}>
@@ -29,8 +30,8 @@ export const Builders = () => {
       </div>
       <div className="mt-8">
         <div className="relative">
-          <div className="absolute z-10 top-[260px]">
-            <img src="/src/assets/icons/ihlas-logo.svg" alt="IHLAS Logo" />
+          <div className="absolute z-10 top-[45%] sm:top-[64%]">
+            {ihlasLogo()}
           </div>
           <Swiper
             navigation={{

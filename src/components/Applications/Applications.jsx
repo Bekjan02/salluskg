@@ -7,7 +7,7 @@ export const Applications = () => {
     <div className="applications">
       <h2 className="section__title">Заявка</h2>
       <div className="main py-12 px-[19px]">
-        <h3 className="text-white text-2xl font-bold leading-6">
+        <h3 className="text-white text-2xl font-bold leading-6 sm:text-[26px]">
           Для получения консультации оставьте заявку, и мы свяжемся с вами.
         </h3>
         <form className="form" action="">

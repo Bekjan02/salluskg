@@ -1,4 +1,9 @@
 .aboutUs {
+  img {
+    max-height: inherit;
+    width: 100%;
+    object-fit: cover;
+  }
   .info {
     background: rgba(255, 255, 255, 0.59);
     border-radius: 25px;

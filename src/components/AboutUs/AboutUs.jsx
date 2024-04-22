@@ -6,7 +6,7 @@ export const AboutUs = () => {
     <div className="aboutUs">
       <h1 className="section__title">О нас</h1>
       <div>
-        <div className="h-[324px]">
+        <div className="max-h-[324px]">
           <img src="/src/assets/images/about-us.png" alt="" />
         </div>
         <div className="info">

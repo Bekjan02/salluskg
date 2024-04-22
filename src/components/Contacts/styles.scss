@@ -10,18 +10,18 @@
   .timetable {
     @apply mt-6;
     h2 {
-      @apply text-main text-lg font-semibold;
+      @apply text-main text-lg font-semibold sm:text-2xl;
       line-height: 25.2px;
     }
     p {
-      @apply text-lg font-bold leading-6 text-dark mt-2;
+      @apply text-lg font-bold leading-6 text-dark mt-2 sm:text-lg;
     }
     span {
-      @apply text-base font-normal leading-6 text-dark;
+      @apply text-base font-normal leading-6 text-dark sm:text-lg;
     }
   }
   .geo {
-    @apply flex items-center gap-2 mt-6 text-main text-lg font-semibold tracking-tightest leading-6;
+    @apply flex items-center gap-2 mt-6 text-main text-lg font-semibold tracking-tightest leading-6 sm:text-2xl;
     h2 {
       @apply border-b border-b-main;
     }

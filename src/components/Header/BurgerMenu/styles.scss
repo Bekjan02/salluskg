@@ -7,7 +7,7 @@
     width: fit-content;
   }
   a {
-    @apply text-lg font-medium text-dark;
+    @apply text-lg font-medium text-dark sm:text-2xl;
     &.active {
       @apply text-main font-bold;
     }

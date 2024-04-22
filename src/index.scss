@@ -19,7 +19,7 @@
   }
 
   .section__title {
-    @apply text-main text-2xl font-bold font-Archivo border-b border-main pb-2.5 mb-6;
+    @apply text-main text-2xl font-bold font-Archivo border-b border-main pb-2.5 mb-6 sm:text-4xl;
   }
 }
 .section {
@@ -30,10 +30,10 @@
     @apply absolute w-full h-16 bg-white;
   }
   &::before {
-    @apply rounded-t-[50px] -top-14 left-0;
+    @apply rounded-t-[50px] -top-14 left-0 sm:-top-16;
   }
   &::after {
-    @apply rounded-b-[50px] -bottom-14 left-0;
+    @apply rounded-b-[50px] -bottom-14 left-0 sm:-bottom-16;
   }
 }
 

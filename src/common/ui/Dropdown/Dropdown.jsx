@@ -33,7 +33,7 @@ export const Dropdown = ({ defaultValue = 'RU', options }) => {
       <div>
         <button
           type="button"
-          className="inline-flex w-full justify-center rounded-md  text-sm font-semibold text-gray-900"
+          className="inline-flex w-full justify-center rounded-md  text-sm font-semibold text-gray-900 sm:text-2xl"
           id="menu-button"
           aria-expanded={isOpen}
           aria-haspopup="true"
@@ -42,7 +42,7 @@ export const Dropdown = ({ defaultValue = 'RU', options }) => {
         >
           {selectedValue}
           <svg
-            className={`-mr-1 h-5 w-5 transition-transform duration-150 ${
+            className={`-mr-1 h-5 w-5 transition-transform duration-150 sm:w-6 sm:h-6 ${
               isOpen ? 'rotate-180' : ''
             }`}
             viewBox="0 0 20 20"
