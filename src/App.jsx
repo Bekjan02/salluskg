@@ -10,6 +10,7 @@ import {
   Applications,
   Contacts,
   Footer,
+  SuccessfulModal,
 } from './components';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         </main>
         <Footer />
       </div>
+      <SuccessfulModal />
     </>
   );
 }

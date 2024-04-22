@@ -1,7 +1,8 @@
-import React from 'react';
+import { useNotify } from '../../provider/NotifyProvider';
 import './styles.scss';
 
 export const Applications = () => {
+  const { openModal } = useNotify();
   return (
     <div className="applications">
       <h2 className="section__title">Заявка</h2>
@@ -30,7 +31,7 @@ export const Applications = () => {
             type="text"
             placeholder="Ваше сообщение"
           />
-          <button className="w-full py-2" type="submit">
+          <button onClick={openModal} className="w-full py-2" type="submit">
             Отправить заявку
           </button>
         </form>

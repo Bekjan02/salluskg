@@ -8,3 +8,4 @@ export { Builders } from './Builders';
 export { Applications } from './Applications';
 export { Contacts } from './Contacts';
 export { Footer } from './Footer';
+export { SuccessfulModal } from './SuccessfulModal';

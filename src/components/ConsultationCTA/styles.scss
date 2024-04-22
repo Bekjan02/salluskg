@@ -11,4 +11,12 @@
     border: 3px solid #beeae0;
     background: #ffffff;
   }
+  .applications {
+    .section__title {
+      @apply hidden;
+    }
+    .call {
+      @apply hidden;
+    }
+  }
 }
