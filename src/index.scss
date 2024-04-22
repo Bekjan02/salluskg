@@ -23,7 +23,18 @@
   }
 }
 .section {
-  @apply bg-white py-16 px-4 rounded-[50px];
+  @apply bg-white px-4 relative;
+  &::after,
+  &::before {
+    content: '';
+    @apply absolute w-full h-16 bg-white;
+  }
+  &::before {
+    @apply rounded-t-[50px] -top-14 left-0;
+  }
+  &::after {
+    @apply rounded-b-[50px] -bottom-14 left-0;
+  }
 }
 
 // Archivo font family

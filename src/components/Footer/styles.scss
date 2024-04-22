@@ -1,7 +1,7 @@
 .footer {
   background: url(/src/assets/images/footer-bg.png) center no-repeat;
   background-size: cover;
-  @apply px-4 py-16;
+  @apply px-4 pb-16 pt-20;
   .links {
     @apply flex flex-col gap-4;
     a {
