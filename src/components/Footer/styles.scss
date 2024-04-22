@@ -1,0 +1,19 @@
+.footer {
+  background: url(/src/assets/images/footer-bg.png) center no-repeat;
+  background-size: cover;
+  @apply px-4 py-16;
+  .links {
+    @apply flex flex-col gap-4;
+    a {
+      @apply text-dark text-base font-medium leading-4;
+    }
+  }
+  .socials {
+    @apply flex gap-6 mt-6;
+    img {
+      width: 38px;
+      height: 28px;
+      object-fit: contain;
+    }
+  }
+}

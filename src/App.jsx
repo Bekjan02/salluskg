@@ -9,6 +9,7 @@ import {
   Builders,
   Applications,
   Contacts,
+  Footer,
 } from './components';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Contacts />
           </div>
         </main>
+        <Footer />
       </div>
     </>
   );
