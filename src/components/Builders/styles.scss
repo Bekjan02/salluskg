@@ -1,0 +1,27 @@
+.builders {
+  svg {
+    filter: grayscale(1);
+    transition: fill 0.3s ease-in-out;
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  .builders__slider {
+    height: 650px;
+    h3 {
+      @apply text-2xl font-bold text-dark;
+    }
+    p {
+      @apply text-base font-normal leading-6 tracking-tightest;
+    }
+    .swiper-arrow {
+      position: absolute;
+      bottom: 0;
+    }
+    .arrow {
+      &-next {
+        right: 0;
+      }
+    }
+  }
+}

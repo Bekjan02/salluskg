@@ -2,8 +2,6 @@
   @apply pb-32 pt-24;
   background: url('/src/assets/images/consultation-bg.png') center no-repeat;
   background-size: cover;
-  z-index: -1;
-  position: absolute;
   margin-top: -50px;
   h2 {
     @apply text-2xl font-bold leading-8 text-white;

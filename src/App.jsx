@@ -6,6 +6,7 @@ import {
   Hero,
   Services,
   ConsultationCTA,
+  Builders,
 } from './components';
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
             <Benefits />
           </div>
           <ConsultationCTA />
+          <div className="section">
+            <Builders />
+          </div>
         </main>
       </div>
     </>
