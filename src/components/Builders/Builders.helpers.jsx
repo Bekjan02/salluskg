@@ -10,14 +10,25 @@ import {
 } from '../../assets/icons/builders';
 
 export const items = [
-  AlamStroy,
-  AvangardStroy,
-  EliteHouse,
   Ihlas,
   KgGroup,
+  EliteHouse,
+  AlamStroy,
   MunaraStroy,
-  RoyalGroup,
   TsGroup,
+  AvangardStroy,
+  RoyalGroup,
+];
+
+export const items2 = [
+  Ihlas,
+  KgGroup,
+  EliteHouse,
+  AlamStroy,
+  MunaraStroy,
+  TsGroup,
+  AvangardStroy,
+  RoyalGroup,
 ];
 
 export const slidesData = [

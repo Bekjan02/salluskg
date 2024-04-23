@@ -6,7 +6,7 @@ export const Services = () => {
   return (
     <div className="services">
       <h2 className="section__title">Наши услуги</h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg-md:grid-cols-3">
         {cards.map((card, i) => (
           <div
             key={card.id}

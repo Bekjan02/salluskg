@@ -2,4 +2,15 @@
   z-index: 20;
   backdrop-filter: blur(58px);
   background: rgba(255, 255, 255, 0.78);
+  &-top {
+    svg path {
+      stroke: white;
+    }
+  }
+  a {
+    @apply text-lg font-medium text-dark sm:text-2xl lg-md:text-sm xl:text-base;
+    &.active {
+      @apply text-main font-bold;
+    }
+  }
 }

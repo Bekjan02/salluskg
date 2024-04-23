@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-export const Dropdown = ({ defaultValue = 'RU', options }) => {
+export const Dropdown = ({ defaultValue = 'РУ', options }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedValue, setSelectedValue] = useState(defaultValue);
   const buttonRef = useRef(null);
@@ -33,7 +33,7 @@ export const Dropdown = ({ defaultValue = 'RU', options }) => {
       <div>
         <button
           type="button"
-          className="inline-flex w-full justify-center rounded-md  text-sm font-semibold text-gray-900 sm:text-2xl"
+          className="inline-flex w-full justify-center rounded-md lg-md:text-sm text-sm font-semibold text-gray-900 sm:text-2xl lg-md:items-center"
           id="menu-button"
           aria-expanded={isOpen}
           aria-haspopup="true"
@@ -58,7 +58,7 @@ export const Dropdown = ({ defaultValue = 'RU', options }) => {
       </div>
 
       <div
-        className={`absolute -right[130px] z-10 mt-2 w-56 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-opacity duration-300 ${
+        className={`absolute -right[130px] lg-md:-right-10 lg-md:w-max z-10 mt-2 w-56 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-opacity duration-300 ${
           isOpen
             ? 'opacity-100 scale-100'
             : 'opacity-0 scale-95 pointer-events-none'

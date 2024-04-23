@@ -1,19 +1,14 @@
 .footer {
   background: url(/src/assets/images/footer-bg.png) center no-repeat;
   background-size: cover;
-  @apply px-4 pb-16 pt-20;
+  @apply px-4 pb-16 pt-20 lg-md:pt-44;
   .links {
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-4 lg-md:flex-row lg-md:justify-center;
     a {
       @apply text-dark text-base font-medium leading-4 sm:text-xl;
     }
   }
   .socials {
-    @apply flex gap-6 mt-6 h-8;
-    img {
-      width: 38px;
-      height: 100%;
-      object-fit: contain;
-    }
+    @apply flex gap-6 mt-6 h-8 lg-md:justify-center;
   }
 }

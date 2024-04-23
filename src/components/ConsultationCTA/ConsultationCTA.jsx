@@ -8,13 +8,15 @@ export const ConsultationCTA = () => {
   const { openModal, isModalOpen, closeModal } = useApplicationContext();
 
   return (
-    <section className="consultation-cta container">
-      <div>
+    <section className="consultation-cta">
+      <div className="px-4 lg-md:flex gap-8 items-end">
         <h2>Чтобы получить консультацию, свяжитесь с нами</h2>
         <button onClick={openModal}>Связаться</button>
       </div>
       <Modal closeModal={closeModal} isModalOpen={isModalOpen}>
-        <Applications />
+        <div className="xl:max-w-5xl xl:mx-auto">
+          <Applications />
+        </div>
       </Modal>
     </section>
   );

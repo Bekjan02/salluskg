@@ -6,7 +6,7 @@
     @apply text-2xl font-bold leading-8 text-white sm:text-[34px];
   }
   button {
-    @apply text-dark w-full rounded-full text-base font-semibold tracking-wider py-[6px] mt-8 sm:text-2xl sm:py-3;
+    @apply text-dark w-full rounded-full text-base font-semibold tracking-wider py-[6px] mt-8 sm:text-2xl sm:py-3 lg-md:w-2/5 lg-md:py-2 lg-md:text-xl;
     border: 3px solid #beeae0;
     background: #ffffff;
   }

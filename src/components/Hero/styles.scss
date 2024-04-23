@@ -1,8 +1,8 @@
 .hero {
   .hero__subInfo {
-    @apply mt-12;
+    @apply mt-12 lg-md:flex;
     h2 {
-      @apply text-main font-semibold text-[1.75rem] leading-[30px];
+      @apply text-main font-semibold text-[1.75rem] leading-[30px] lg-md:text-3xl lg-md:tracking-[-0.02rem];
     }
     p {
       @apply text-main text-base font-normal leading-[20px] mt-3;

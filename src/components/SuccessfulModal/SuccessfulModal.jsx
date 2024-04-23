@@ -15,7 +15,7 @@ export const SuccessfulModal = () => {
   return (
     <div className="successfulModal">
       <Modal closeModal={closeModal} isModalOpen={isModalOpen} closeIcon={true}>
-        <div className="flex flex-col justify-center items-center text-center bg-white relative p-8 rounded-3xl">
+        <div className="flex flex-col justify-center items-center text-center bg-white relative p-8 rounded-3xl lg-md:max-w-lg lg-md:mx-auto">
           <img
             onClick={closeModal}
             className="absolute top-5 right-5 cursor-pointer"

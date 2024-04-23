@@ -27,9 +27,18 @@ export const Benefits = () => {
   return (
     <div className="benefits">
       <h2 className="section__title">Преимущества работы с нами</h2>
-      <div>
-        <div>
-          <img src="/src/assets/images/benefits-mobile.png" alt="" />
+      <div className="lg-md:flex lg-md:gap-8 lg-md:items-center">
+        <div className="xl:w-1/2">
+          <img
+            src="/src/assets/images/benefits-mobile.png"
+            alt=""
+            className="lg-md:hidden"
+          />
+          <img
+            src="/src/assets/images/benefits-desktop.png"
+            alt=""
+            className="hidden lg-md:block"
+          />
         </div>
         <Accordion data={accordionItem} />
       </div>

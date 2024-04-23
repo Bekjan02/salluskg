@@ -14,14 +14,18 @@
     p {
       @apply text-base font-normal leading-6 tracking-tightest;
     }
-    .swiper-arrow {
-      position: absolute;
-      bottom: 0;
+  }
+  .swiper-arrow {
+    position: absolute;
+    bottom: -60px;
+    @apply lg-md:top-1/2 lg-md:-translate-y-1/2 lg-md:bottom-0;
+  }
+  .arrow {
+    &-prev {
+      left: 0;
     }
-    .arrow {
-      &-next {
-        right: 0;
-      }
+    &-next {
+      right: 0;
     }
   }
 }

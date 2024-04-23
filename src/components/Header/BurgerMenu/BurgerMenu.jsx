@@ -33,7 +33,7 @@ export const BurgerMenu = ({ isOpen }) => {
   return (
     <div
       className={cn(
-        'burgerMenu fixed bottom-0 right-0 w-screen shadow-lg transition-transform duration-300 ease-in-out z-50',
+        'burgerMenu fixed bottom-0 right-0 w-screen shadow-lg transition-transform duration-300 ease-in-out z-50 lg-md:hidden',
         {
           'translate-x-full': !isOpen,
           'translate-x-0': isOpen,

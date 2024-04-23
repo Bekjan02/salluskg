@@ -5,13 +5,11 @@
     object-fit: cover;
   }
   .info {
+    @apply rounded-[25px] p-4 -mt-12 lg-md:mt-0 lg-md:absolute lg-md:top-1/4 lg-md:left-0 lg-md:max-w-[618px];
     background: rgba(255, 255, 255, 0.59);
-    border-radius: 25px;
-    padding: 16px;
-    margin-top: -48px;
     backdrop-filter: blur(58px);
     p {
-      @apply text-dark text-base;
+      @apply text-dark text-base lg-md:text-sm;
       &:nth-child(2) {
         margin-top: 10px;
       }

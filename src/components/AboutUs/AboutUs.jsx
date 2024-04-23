@@ -5,9 +5,18 @@ export const AboutUs = () => {
   return (
     <div className="aboutUs">
       <h1 className="section__title">О нас</h1>
-      <div>
-        <div className="max-h-[324px]">
-          <img src="/src/assets/images/about-us.png" alt="" />
+      <div className="lg-md:flex lg-md:flex-row-reverse lg-md:relative">
+        <div className="image max-h-[324px] lg-md:max-h-none lg-md:w-4/5">
+          <img
+            src="/src/assets/images/about-us.png"
+            alt=""
+            className="lg-md:hidden"
+          />
+          <img
+            src="/src/assets/images/about-us-desktop.png"
+            alt=""
+            className="hidden lg-md:block"
+          />
         </div>
         <div className="info">
           <p>

@@ -24,7 +24,7 @@ export default {
         center: true,
         padding: {
           DEFAULT: '1rem',
-          'full-hd': '120px',
+          'lg-md': '5rem',
         },
       },
       letterSpacing: {

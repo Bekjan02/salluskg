@@ -16,24 +16,26 @@ import {
 function App() {
   return (
     <>
-      <div className="h-screen w-screen bg-slate-700">
-        <Header />
-        <main>
-          <Hero />
-          <div className="section">
+      <Header />
+      <main>
+        <Hero />
+        <div className="section">
+          <div className="container">
             <AboutUs />
             <Services />
             <Benefits />
           </div>
-          <ConsultationCTA />
-          <div className="section">
+        </div>
+        <ConsultationCTA />
+        <div className="section">
+          <div className="container">
             <Builders />
             <Applications />
             <Contacts />
           </div>
-        </main>
-        <Footer />
-      </div>
+        </div>
+      </main>
+      <Footer />
       <SuccessfulModal />
     </>
   );
