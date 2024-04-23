@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { items2 } from '../Builders.helpers';
+import { items } from '../Builders.helpers';
 import './styles.scss';
 
 const OrganizationsSlider = () => {
@@ -76,7 +76,7 @@ const OrganizationsSlider = () => {
         spaceBetween={40}
         freeMode={true}
       >
-        {items2.map((Item) => (
+        {items.map((Item) => (
           <SwiperSlide key={Item()}>
             <div className="icon">{Item()}</div>
           </SwiperSlide>
