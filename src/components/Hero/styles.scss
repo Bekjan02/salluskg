@@ -1,11 +1,11 @@
 .hero {
   .hero__subInfo {
-    @apply mt-12 lg-md:flex;
+    @apply mt-12 lg-md:flex full-hd:gap-20;
     h2 {
-      @apply text-main font-semibold text-[1.75rem] leading-[30px] lg-md:text-3xl lg-md:tracking-[-0.02rem];
+      @apply text-main font-semibold text-[1.75rem] leading-[30px] lg-md:text-3xl lg-md:tracking-[-0.02rem] full-hd:text-4xl;
     }
     p {
-      @apply text-main text-base font-normal leading-[20px] mt-3;
+      @apply text-main text-base font-normal leading-[20px] mt-3 full-hd:text-lg;
     }
   }
 }

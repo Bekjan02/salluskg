@@ -9,7 +9,7 @@
     background: rgba(255, 255, 255, 0.59);
     backdrop-filter: blur(58px);
     p {
-      @apply text-dark text-base lg-md:text-sm;
+      @apply text-dark text-base lg-md:text-sm full-hd:text-[18px] full-hd:leading-6;
       &:nth-child(2) {
         margin-top: 10px;
       }

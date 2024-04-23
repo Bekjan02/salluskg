@@ -1,0 +1,15 @@
+.organizationSlider {
+  @apply lg-md:px-20 lg-md:mx-auto;
+  .organization-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .organization-arrow-prev {
+    left: 0;
+  }
+  .organization-arrow-next {
+    right: 0;
+  }
+}

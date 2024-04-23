@@ -1,9 +1,9 @@
 .burgerMenu {
   height: calc(100vh - 56px);
   backdrop-filter: blur(58px);
-  @apply px-4 py-6;
+  @apply py-6;
   li {
-    padding: 12px 8px 12px 8px;
+    padding: 12px 8px 12px 0;
     width: fit-content;
   }
   a {

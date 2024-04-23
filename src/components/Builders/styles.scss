@@ -2,12 +2,12 @@
   svg {
     filter: grayscale(1);
     transition: fill 0.3s ease-in-out;
+    width: 100%;
     &:hover {
       filter: grayscale(0);
     }
   }
   .builders__slider {
-    // height: 650px;
     h3 {
       @apply text-2xl font-bold text-dark;
     }

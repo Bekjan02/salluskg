@@ -4,13 +4,15 @@ export const Hero = () => {
   return (
     <section className="hero bg-hero bg-no-repeat bg-center bg-cover min-h-screen pt-40 pb-28  lg-md:min-h-fit">
       <div className="container ">
-        <div className="w-80 lg-md:w-min">
-          <p className="text-white text-2xl font-medium font-Archivo lg-md:text-[32px] lg-md:leading-[50px]">
+        <div className="w-80 lg-md:w-min full-hd:w-[630px]">
+          <p className="text-white text-2xl font-medium font-Archivo lg-md:text-[32px] lg-md:leading-[50px] full-hd:text-5xl">
             Система управления отелями и апартаментами
           </p>
-          <p className="text-[4rem] font-bold text-white uppercase font-Archivo lg-md:text-8xl">
+          <p className="text-[4rem] font-bold text-white uppercase font-Archivo lg-md:text-8xl full-hd:text-9xl">
             salus
-            <span className="text-5xl lowercase lg-md:text-[64px]">.kg</span>
+            <span className="text-5xl lowercase lg-md:text-[64px] full-hd:text-8xl">
+              .kg
+            </span>
           </p>
         </div>
         <div className="hero__subInfo">

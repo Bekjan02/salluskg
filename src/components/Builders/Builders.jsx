@@ -1,10 +1,11 @@
-import { items, items2, slidesData } from './Builders.helpers';
+import { useEffect, useRef, useState } from 'react';
+import { slidesData } from './Builders.helpers';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import IhlasLogo from '@assets/icons/ihlas-logo.svg?react';
-import './styles.scss';
 import 'swiper/css/navigation';
-import { useEffect, useRef, useState } from 'react';
+import OrganizationsSlider from './OrganizationsSlider/OrganizationsSlider';
+import './styles.scss';
 
 export const Builders = () => {
   const swiperRef = useRef(null);
@@ -66,25 +67,9 @@ export const Builders = () => {
 
   return (
     <div className="builders">
-      <h2 className="section__title"> Застройщики</h2>
-      <div className="flex overflow-auto gap-6 lg-md:hidden">
-        {items.map((item, i) => (
-          <span className="" key={i}>
-            {item()}
-          </span>
-        ))}
-      </div>
-      <div className="hidden lg-md:block">
-        <Swiper>
-          {items2.map((Item) => {
-            console.log(Item());
-            return (
-              <SwiperSlide key={Item}>
-                <div className="icon">{Item()}</div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+      <h2 className="section__title">Застройщики</h2>
+      <div className="relative">
+        <OrganizationsSlider />
       </div>
 
       {/* main content slider */}

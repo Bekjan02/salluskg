@@ -36,7 +36,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full bg-opacity-5 lg-md:absolute">
+      <header className="fixed top-0 left-0 w-full bg-opacity-5 z-20 lg-md:absolute">
         {/* top header */}
         <div className="hidden lg-md:block bg-dark px-4 py-4 ">
           <div className="container flex justify-end gap-6 text-white">
@@ -84,7 +84,10 @@ export const Header = () => {
                   <Dropdown options={options} />
                 </li>
               </ul>
-              <button onClick={openModal} className="btn-filled px-3 ml-3">
+              <button
+                onClick={openModal}
+                className="btn-filled px-3 ml-3 xl:px-[77.5px]"
+              >
                 Связаться
               </button>
             </div>
