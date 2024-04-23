@@ -1,17 +1,35 @@
-import React from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import './styles.scss';
 
 export const Modal = ({ isModalOpen, closeModal, children }) => {
-  if (!isModalOpen) {
-    console.log('not opened');
-    return null;
-  }
+  const modalRef = useRef(null);
 
   const handleOverlayClick = (e) => {
     if (e.target.id === 'modal-overlay') {
       closeModal();
     }
   };
+
+  const handleClickOutside = useCallback(
+    (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        closeModal();
+      }
+    },
+    [closeModal]
+  );
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [handleClickOutside]);
+
+  if (!isModalOpen) {
+    console.log('not opened');
+    return null;
+  }
 
   return (
     <>
